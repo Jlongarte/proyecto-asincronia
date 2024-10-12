@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+
+:root {
+  --background-color: #232946;
+  --accent-color: #ff8906;
+}
+
+body {
+  background-color: antiquewhite;
+}
+main {
+  padding-top: 80px;
+  min-height: 80vh;
+  width: 80%;
+  margin: 60px auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#message {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-size: 20px;
+  text-align: center;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+#message.visible {
+  display: none;
+}
+
+a {
+  color: rgba(255, 0, 255, 0.584);
+  text-decoration: none;
+}
+
+/*Versión Móvil*/
+
+@media only screen and (max-width: 767px) {
+  main {
+    padding-top: 300px;
+  }
+}
